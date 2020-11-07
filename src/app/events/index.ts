@@ -5,3 +5,4 @@ export * from "./events-list.component";
 export * from "./shared/index";
 export * from "./event-detail/index";
 export * from "./events-app.component";
+export * from "./location.validator.directive";
