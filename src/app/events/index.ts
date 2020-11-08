@@ -6,3 +6,4 @@ export * from "./shared/index";
 export * from "./event-detail/index";
 export * from "./events-app.component";
 export * from "./location.validator.directive";
+export * from "./event-resolver.service";

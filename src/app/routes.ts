@@ -3,10 +3,10 @@ import { Routes } from "@angular/router";
 import {
   CreateEventComponent,
   EventDetailComponent,
-  EventRouteActivator,
   EventsListComponent,
   EventListResolver,
   CreateSessionComponent,
+  EventResolver,
 } from "./events/index";
 
 import { Error404Component } from "./errors/404.component";
@@ -25,7 +25,7 @@ export const appRoutes: Routes = [
   {
     path: "events/:id",
     component: EventDetailComponent,
-    canActivate: [EventRouteActivator],
+    resolve: { event: EventResolver },
   },
   { path: "events/session/new", component: CreateSessionComponent },
   { path: "404", component: Error404Component },
